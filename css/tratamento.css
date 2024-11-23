@@ -1,6 +1,7 @@
 body{
     text-align: justify;
 }
+
 main{
     padding-left: 20px;
     padding-right: 20px;
@@ -10,7 +11,7 @@ nav{
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     background-color: pink;
 
 }
@@ -21,7 +22,13 @@ nav{
     padding: 5px;
     margin-left: 15px;
     margin-top: 5px;
+    border-radius: 20px;
 }
+
+li a{
+    color: rgb(101, 5, 106);
+}
+
 
 
 .nav-lista{
@@ -36,4 +43,42 @@ nav{
 }
 h1{
     text-align: center;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex; /* Torna o contêiner flexível */
+    justify-content: space-between; /* Espaça os itens uniformemente */
+    align-items: center; /* Alinha verticalmente ao centro */
+    gap: 90px;
+}
+
+.text{
+    width: 50%; /* Cada um ocupa metade da largura */
+    font-size: 23px;
+}
+
+.galeria {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Distribui as imagens uniformemente */
+    align-items: center; /* Alinha as imagens verticalmente no centro */
+    gap: 10px; /* Espaçamento entre as imagens */
+    margin-top: 50px;
+}
+
+.galeria .img {
+    width: 200px; /* Largura fixa para todas as imagens */
+    height: 150px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que as imagens sejam cortadas proporcionalmente */
+    border: 2px solid #ccc; /* Opcional: adiciona uma borda para destacá-las */
+    border-radius: 5px; /* Opcional: bordas arredondadas para melhor estética */
 }

@@ -12,7 +12,7 @@ nav{
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     background-color: pink;
 
 }
@@ -23,7 +23,13 @@ nav{
     padding: 5px;
     margin-left: 15px;
     margin-top: 5px;
+    border-radius: 20px;
 }
+
+li a{
+    color: rgb(101, 5, 106);
+}
+
 
 
 .nav-lista{
@@ -36,11 +42,56 @@ nav{
     margin-top: 35px;
 
 }
-h1{
-    text-align: center;
-}
+
 .img{
     width: auto;
     height: 500px;
     text-align: center;
 }
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    display: flex; /* Torna o contêiner flexível */
+    justify-content: space-between; /* Espaça os itens uniformemente */
+    align-items: center; /* Alinha verticalmente ao centro */
+    gap: 90px;
+}
+
+.foto {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaçamento entre as imagens */
+}
+
+.foto img {
+    width: 800%; /* Cada imagem ocupa 45% da largura do contêiner */
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.text{
+    width: 40%; /* Cada um ocupa metade da largura */
+    font-size: 23px;
+}
+
+.ft img{
+    width: 300px;
+}
+
