@@ -1,0 +1,153 @@
+main{
+    text-align: justify;
+}
+
+nav{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-bottom: 150px;
+    background-color: pink;
+
+}
+
+.logo img{
+    width: 200px;
+    align-items: start;
+    padding: 5px;
+    margin-left: 15px;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+.nav-lista {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-around; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    width: 100%; /* Garante que o menu ocupe a largura total do nav */
+    padding: 0; /* Remove o padding extra */
+    list-style: none; /* Remove os marcadores de lista */
+    margin: 0; /* Remove margens extras */
+}
+
+.nav-lista li {
+    flex: 1; /* Opcional: garante espaço igual para cada link */
+    text-align: center; /* Centraliza o texto de cada item */
+}
+
+.nav-lista li a {
+    display: block; /* Torna o link um bloco para melhor controle */
+    color: rgb(101, 5, 106); /* Define a cor */
+    padding: 10px 0; /* Ajusta o espaço interno */
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container {
+    display: flex; /* Torna o contêiner flexível */
+    justify-content: space-between; /* Espaça os itens uniformemente */
+    align-items: center; /* Alinha verticalmente ao centro */
+    gap: 90px;
+}
+
+
+.text{
+    font-size: 23px;
+    margin: 20px 20px;
+}
+
+
+
+/* From Uiverse.io by david-mohseni */ 
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    padding-left: 0%;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #1da1f2;
+    color: #fff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #e4405f;
+    color: #fff;
+  }
+  

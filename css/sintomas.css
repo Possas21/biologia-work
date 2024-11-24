@@ -26,21 +26,25 @@ nav{
     border-radius: 20px;
 }
 
-li a{
-    color: rgb(101, 5, 106);
+.nav-lista {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-around; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    width: 100%; /* Garante que o menu ocupe a largura total do nav */
+    padding: 0; /* Remove o padding extra */
+    list-style: none; /* Remove os marcadores de lista */
+    margin: 0; /* Remove margens extras */
 }
 
-
-
-.nav-lista{
-    display: flex;
+.nav-lista li {
+    flex: 1; /* Opcional: garante espaço igual para cada link */
+    text-align: center; /* Centraliza o texto de cada item */
 }
 
-
-.nav-lista li{
-    margin-left: 80px;
-    margin-top: 35px;
-
+.nav-lista li a {
+    display: block; /* Torna o link um bloco para melhor controle */
+    color: rgb(101, 5, 106); /* Define a cor */
+    padding: 10px 0; /* Ajusta o espaço interno */
 }
 
 .img{
